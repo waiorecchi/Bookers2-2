@@ -1,0 +1,11 @@
+<h1>welcome to <i class="fa-solid fa-book"></i>Bookers !!</h1><br>
+<h3>In Bookers,</h3><br>
+<h3>you can share and exchange your opinions, impressions, and emotions</h3><br>
+<h3>about various books!</h3><br>
+
+<% unless user_signed_in? %>
+  <div class="d-grid gap-2 d-md-block mt-4">
+    <%= link_to "Log in", new_user_session_path, class: "btn btn-primary me-2" %>
+    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
+  </div>
+<% end %>
